@@ -1,0 +1,108 @@
+/* ============================================================
+   KnowingPath.ai — Global Styles
+   Applied once via _app.tsx
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(91,163,217,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(212,168,67,0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 100%, rgba(91,163,217,0.06) 0%, transparent 70%),
+    linear-gradient(180deg, #050912 0%, #0A0F1E 40%, #0F1729 100%);
+  background-attachment: fixed;
+  color: #E2E8F0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #050912; }
+::-webkit-scrollbar-thumb {
+  background: rgba(91,163,217,0.35);
+  border-radius: 3px;
+}
+
+/* Responsive nav */
+@media (max-width: 768px) {
+  .kp-nav-desktop { display: none !important; }
+  .kp-nav-mobile-toggle { display: flex !important; }
+}
+
+/* ── Card glow — SSV-matched hover signature ─────────────────────────────────
+   SSV: normal  0 4px 15px #0003
+        hover   0 15px 45px #0009, 0 0 30px #4bc3ff80, 0 0 60px #4bc3ff33
+   KP accent #5BA3D9 replaces SSV #4BC3FF
+   ─────────────────────────────────────────────────────────────────────────── */
+.kp-glow-card--hoverable {
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.kp-glow-card--hoverable:hover {
+  transform:    translateY(-4px) !important;
+  box-shadow:   0 15px 45px rgba(0,0,0,0.55),
+                0 0 30px rgba(91,163,217,0.50),
+                0 0 60px rgba(91,163,217,0.20) !important;
+  border-color: rgba(91,163,217,0.35) !important;
+}
+
+/* ── .kp-card-glow — apply SSV glow to any inline-styled card div ───────────
+   Add className="kp-card-glow" to card divs not using GlowCard component.
+   ─────────────────────────────────────────────────────────────────────────── */
+.kp-card-glow {
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.kp-card-glow:hover {
+  box-shadow:   0 15px 45px rgba(0,0,0,0.55),
+                0 0 30px rgba(91,163,217,0.50),
+                0 0 60px rgba(91,163,217,0.20) !important;
+  border-color: rgba(91,163,217,0.35) !important;
+  transform:    translateY(-3px);
+}
+
+/* ── .kp-btn-glow — SSV button glow for inline-styled buttons ───────────────
+   SSV: normal  0 4px 15px #256dff4d
+        hover   0 6px 20px #256dff80 + bloom
+        active  compressed radius
+   ─────────────────────────────────────────────────────────────────────────── */
+.kp-btn-glow {
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              transform  0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              background 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(91,163,217,0.38) !important;
+}
+.kp-btn-glow:hover {
+  box-shadow: 0 6px 22px rgba(91,163,217,0.60),
+              0 0 14px rgba(91,163,217,0.28) !important;
+  transform:  translateY(-2px);
+}
+.kp-btn-glow:active {
+  box-shadow: 0 2px 8px rgba(91,163,217,0.45) !important;
+  transform:  translateY(0);
+}
+
+/* Form inputs */
+input::placeholder,
+textarea::placeholder {
+  color: #475569;
+}
+
+/* Scroll hint */
+@keyframes scrollHint {
+  0%, 100% { opacity: 0.4; transform: scaleY(1); }
+  50%       { opacity: 0.9; transform: scaleY(1.15); }
+}

@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "KnowingPath.ai",
+    "slug": "knowingpath-ai",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#050912"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ai.knowingpath.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#050912"
+      },
+      "package": "ai.knowingpath.app"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "fonts": []
+  }
+}
