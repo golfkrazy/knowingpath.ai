@@ -5,7 +5,6 @@ const nextConfig = {
   compiler: {
     styledComponents: false,
   },
-  output: 'export',
 }
 
 module.exports = nextConfig
