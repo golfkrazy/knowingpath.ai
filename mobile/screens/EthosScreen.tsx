@@ -56,7 +56,7 @@ export default function EthosScreen() {
           activeOpacity={0.85}
           onPress={() => nav.navigate('MottoScreen')}
         >
-          <Text style={s.btnNextText}>Your Motto →</Text>
+          <Text style={s.btnNextText}>Our Motto →</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={s.btnBack}

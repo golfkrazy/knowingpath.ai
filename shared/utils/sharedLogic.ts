@@ -281,7 +281,7 @@ export const CONTENT = {
     email: {
       eyebrow: 'Email',
       title:   'Send Us a Message',
-      address: 'sales@knowingpath.ai',
+      address: 'support@knowingpath.ai',
       desc:    'Questions, feedback, or just want to say hello — we read every message and respond with care.',
     },
 

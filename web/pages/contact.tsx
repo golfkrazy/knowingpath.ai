@@ -371,13 +371,7 @@ export default function ContactPage() {
       <Head>
         <title>Contact — KnowingPath.ai</title>
         <meta name="description" content="Reach out by email, find us on social, or get support — we're here with you." />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
       </Head>
-      <style>{`
-        @media(max-width:768px){
-          section>div[style*="grid-template-columns: 1fr 1fr"]{grid-template-columns:1fr!important;}
-        }
-      `}</style>
       <Layout>
         {/* Hero */}
         <section style={{

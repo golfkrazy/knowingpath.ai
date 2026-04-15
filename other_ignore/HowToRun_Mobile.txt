@@ -1,0 +1,8 @@
+# Run in PowerShell as Administrator
+netsh advfirewall firewall add rule name="Expo 8081" dir=in action=allow protocol=TCP localport=8081
+
+
+npm install
+npm install -g @expo/ngrok@^4.0.1
+npx expo install --fix
+npx expo start --tunnel

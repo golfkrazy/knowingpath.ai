@@ -36,3 +36,7 @@ Thumbs.db
 
 # Cache
 .cache/
+
+# other
+.claude/
+.other_ignore/

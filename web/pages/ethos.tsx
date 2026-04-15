@@ -97,7 +97,7 @@ export default function EthosPage() {
                 borderRadius:'10px',boxShadow:'0 4px 20px rgba(91,163,217,0.35)',
               }}
             >
-              Your Motto →
+              Our Motto →
             </button>
             <button
               onClick={() => router.push('/')}

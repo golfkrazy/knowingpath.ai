@@ -4,7 +4,8 @@
       "WebFetch(domain:stashsnapvault.netlify.app)",
       "Bash(curl -s \"https://stashsnapvault.netlify.app/\")",
       "Bash(curl -s \"https://stashsnapvault.netlify.app/assets/index-DRj-6Ov8.css\")",
-      "WebFetch(domain:mobbin.com)"
+      "WebFetch(domain:mobbin.com)",
+      "Bash(npm install:*)"
     ]
   }
 }

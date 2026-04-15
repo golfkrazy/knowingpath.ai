@@ -26,6 +26,13 @@ body {
   overflow-x: hidden;
 }
 
+/* Contact page responsive grid */
+@media (max-width: 768px) {
+  section > div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #050912; }

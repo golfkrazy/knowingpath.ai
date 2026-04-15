@@ -1,0 +1,105 @@
+{
+  "default_skills": ["brand_aware_ui_generator", "cautious_incremental_coder", "safe_lint_fixer"],
+  "skills": [
+    {
+      "name": "brand_aware_ui_generator",
+      "path": "skills/brand_aware_ui_generator/SKILL.md",
+      "subagent_skills": [
+        {
+          "name": "brand_aware_ui_generator_subagent",
+          "path": "skills/brand_aware_ui_generator_subagent/SKILL.md"
+        }
+      ]
+    },
+    {
+      "name": "cautious_incremental_coder",
+      "path": "skills/cautious_incremental_coder/SKILL.md",
+      "subagent_skills": [
+        {
+          "name": "cautious_incremental_coder_subagent",
+          "path": "skills/cautious_incremental_coder_subagent/SKILL.md"
+        }
+      ]
+    },
+    {
+      "name": "safe_lint_fixer",
+      "path": "skills/safe_lint_fixer/SKILL.md",
+      "subagent_skills": [
+        {
+          "name": "safe_lint_fixer_subagent",
+          "path": "skills/safe_lint_fixer_subagent/SKILL.md"
+        }
+      ]
+    },
+    {
+      "name": "stripe_api_consistency",
+      "path": "skills/stripe-api-consistency-agent/SKILL.md",
+      "subagent_skills": [
+        {
+          "name": "stripe_api_consistency_subagent",
+          "path": "skills/stripe-api-consistency-subagent/SKILL.md"
+        }
+      ]
+    },
+    {
+      "name": "supabase_api_consistency",
+      "path": "skills/supabase_api_consistency/SKILL.md",
+      "subagent_skills": [
+        {
+          "name": "supabase_api_consistency_subagent",
+          "path": "skills/supabase_api_consistency_subagent/SKILL.md"
+        }
+      ]
+    },
+    {
+      "name": "sr_security_architect",
+      "path": "skills/security/sr-security-architect/SKILL.md",
+      "subagent_skills": [
+        {
+          "name": "security_input_validation",
+          "path": "skills/security/security-input-validation/SKILL.md"
+        },
+        {
+          "name": "security_auth_authz",
+          "path": "skills/security/security-auth-authz/SKILL.md"
+        },
+        {
+          "name": "security_payment",
+          "path": "skills/security/security-payment/SKILL.md"
+        },
+        {
+          "name": "security_database",
+          "path": "skills/security/security-database/SKILL.md"
+        },
+        {
+          "name": "security_email_headers",
+          "path": "skills/security/security-email-headers/SKILL.md"
+        },
+        {
+          "name": "security_ai_rag",
+          "path": "skills/security/security-ai-rag/SKILL.md"
+        },
+        {
+          "name": "security_secdevops",
+          "path": "skills/security/security-secdevops/SKILL.md"
+        },
+        {
+          "name": "db_design_architect",
+          "path": "skills/security/db-design-architect/SKILL.md"
+        }
+      ]
+    }, 
+    {
+      "name": "explain_code",
+      "path": "skills/explain-code/SKILL.md"
+    },
+    {
+      "name": "codebase-visualizer",
+      "path": "skills/codebase-visualizer/SKILL.md"
+    },
+    {
+      "name": "root_files_auditor",
+      "path": "skills/root-files-auditor/SKILL.md"
+    }
+  ]
+}

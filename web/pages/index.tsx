@@ -609,7 +609,7 @@ const MottoSection: React.FC = () => (
               color:         '#D4A843',
               textTransform: 'uppercase',
             }}>
-              Your Motto
+              Our Motto
             </span>
           </div>
 

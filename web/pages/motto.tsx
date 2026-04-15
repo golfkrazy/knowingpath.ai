@@ -14,7 +14,7 @@ export default function MottoPage() {
   return (
     <>
       <Head>
-        <title>Your Motto — KnowingPath.ai</title>
+        <title>Our Motto — KnowingPath.ai</title>
         <meta name="description" content="You Are Not Dumb — You Just Don't Know. Everyone starts somewhere." />
       </Head>
       <Layout>
@@ -31,7 +31,7 @@ export default function MottoPage() {
           }}>
             <span style={{fontFamily:'Inter',fontSize:'0.6875rem',fontWeight:600,
               letterSpacing:'0.15em',color:'#D4A843',textTransform:'uppercase' as const}}>
-              Your Motto
+              Our Motto
             </span>
           </div>
 
